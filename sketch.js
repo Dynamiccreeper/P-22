@@ -63,14 +63,11 @@ function draw() {
 }
 
 function keyPressed() {
- if (keyDown === DOWN_ARROW) {
-	 //packageSprite_option.isStatic(true);
-    // Look at the hints in the document and understand how to make the package body fall only on press of the Down arrow key.
-
-	packageSprite.x= packageBody.position.x
-packageSprite.y= packageBody.position.y 
-
-  }
+	if (keyCode === 40 ) {
+		Matter.Body.setStatic(packageBody,false);
+	   // Look at the hints in the document and understand how to make the package body fall only on press of the Down arrow key.
+	
+	 }
 }
 
 
