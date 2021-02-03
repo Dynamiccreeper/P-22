@@ -33,7 +33,7 @@ function setup() {
 
 	packageSprite_option = {
 
-		isStatic:false, restitution : 0.6
+		isStatic:true, restitution : 0.6
 	}
 
 	packageBody = Bodies.circle(width/2 , 200 , 5 , packageSprite_option);
